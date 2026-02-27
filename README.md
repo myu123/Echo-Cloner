@@ -2,6 +2,9 @@
 
 A modern, full-stack voice cloning application using XTTS-v2 for high-quality voice synthesis. Upload audio, train custom voice models, and generate speech with your cloned voice.
 
+![Train page](images/train_page.png)
+![Generate page](images/generate_page.png)
+
 ## Features
 
 - **Audio Upload & Processing**: Upload long-form audio (podcasts, interviews) with drag-and-drop support
