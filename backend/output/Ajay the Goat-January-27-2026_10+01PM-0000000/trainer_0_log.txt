@@ -1,0 +1,2005 @@
+ > Training Environment:
+ | > Backend: Torch
+ | > Mixed precision: False
+ | > Precision: float32
+ | > Current device: 0
+ | > Num. of GPUs: 1
+ | > Num. of CPUs: 24
+ | > Num. of Torch Threads: 1
+ | > Torch seed: 54321
+ | > Torch CUDNN: True
+ | > Torch CUDNN deterministic: False
+ | > Torch CUDNN benchmark: False
+ | > Torch TF32 MatMul: False
+ > Start Tensorboard: tensorboard --logdir=output\Ajay the Goat-January-27-2026_10+01PM-0000000
+ > Restoring from model.pth ...
+ > Restoring Model...
+ > Partial model initialization...
+ | > Layer missing in the model definition: mel_stats
+ | > Layer missing in the model definition: gpt.conditioning_encoder.init.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.init.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.0.norm.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.0.norm.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.0.qkv.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.0.qkv.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.0.proj_out.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.0.proj_out.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.1.norm.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.1.norm.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.1.qkv.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.1.qkv.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.1.proj_out.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.1.proj_out.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.2.norm.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.2.norm.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.2.qkv.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.2.qkv.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.2.proj_out.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.2.proj_out.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.3.norm.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.3.norm.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.3.qkv.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.3.qkv.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.3.proj_out.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.3.proj_out.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.4.norm.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.4.norm.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.4.qkv.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.4.qkv.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.4.proj_out.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.4.proj_out.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.5.norm.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.5.norm.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.5.qkv.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.5.qkv.bias
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.5.proj_out.weight
+ | > Layer missing in the model definition: gpt.conditioning_encoder.attn.5.proj_out.bias
+ | > Layer missing in the model definition: gpt.text_embedding.weight
+ | > Layer missing in the model definition: gpt.mel_embedding.weight
+ | > Layer missing in the model definition: gpt.gpt.h.0.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.0.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.0.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.0.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.0.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.0.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.0.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.0.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.0.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.0.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.0.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.0.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.1.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.1.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.1.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.1.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.1.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.1.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.1.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.1.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.1.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.1.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.1.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.1.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.2.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.2.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.2.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.2.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.2.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.2.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.2.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.2.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.2.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.2.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.2.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.2.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.3.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.3.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.3.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.3.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.3.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.3.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.3.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.3.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.3.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.3.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.3.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.3.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.4.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.4.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.4.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.4.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.4.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.4.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.4.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.4.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.4.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.4.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.4.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.4.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.5.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.5.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.5.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.5.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.5.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.5.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.5.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.5.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.5.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.5.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.5.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.5.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.6.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.6.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.6.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.6.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.6.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.6.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.6.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.6.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.6.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.6.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.6.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.6.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.7.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.7.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.7.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.7.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.7.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.7.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.7.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.7.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.7.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.7.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.7.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.7.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.8.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.8.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.8.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.8.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.8.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.8.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.8.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.8.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.8.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.8.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.8.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.8.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.9.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.9.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.9.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.9.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.9.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.9.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.9.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.9.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.9.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.9.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.9.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.9.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.10.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.10.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.10.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.10.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.10.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.10.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.10.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.10.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.10.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.10.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.10.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.10.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.11.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.11.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.11.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.11.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.11.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.11.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.11.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.11.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.11.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.11.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.11.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.11.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.12.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.12.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.12.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.12.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.12.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.12.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.12.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.12.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.12.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.12.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.12.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.12.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.13.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.13.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.13.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.13.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.13.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.13.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.13.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.13.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.13.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.13.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.13.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.13.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.14.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.14.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.14.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.14.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.14.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.14.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.14.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.14.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.14.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.14.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.14.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.14.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.15.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.15.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.15.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.15.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.15.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.15.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.15.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.15.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.15.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.15.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.15.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.15.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.16.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.16.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.16.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.16.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.16.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.16.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.16.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.16.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.16.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.16.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.16.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.16.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.17.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.17.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.17.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.17.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.17.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.17.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.17.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.17.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.17.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.17.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.17.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.17.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.18.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.18.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.18.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.18.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.18.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.18.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.18.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.18.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.18.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.18.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.18.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.18.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.19.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.19.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.19.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.19.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.19.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.19.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.19.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.19.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.19.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.19.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.19.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.19.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.20.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.20.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.20.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.20.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.20.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.20.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.20.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.20.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.20.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.20.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.20.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.20.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.21.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.21.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.21.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.21.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.21.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.21.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.21.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.21.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.21.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.21.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.21.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.21.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.22.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.22.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.22.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.22.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.22.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.22.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.22.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.22.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.22.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.22.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.22.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.22.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.23.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.23.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.23.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.23.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.23.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.23.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.23.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.23.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.23.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.23.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.23.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.23.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.24.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.24.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.24.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.24.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.24.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.24.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.24.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.24.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.24.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.24.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.24.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.24.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.25.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.25.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.25.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.25.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.25.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.25.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.25.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.25.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.25.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.25.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.25.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.25.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.26.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.26.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.26.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.26.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.26.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.26.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.26.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.26.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.26.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.26.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.26.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.26.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.27.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.27.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.27.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.27.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.27.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.27.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.27.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.27.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.27.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.27.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.27.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.27.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.28.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.28.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.28.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.28.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.28.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.28.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.28.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.28.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.28.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.28.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.28.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.28.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.29.ln_1.weight
+ | > Layer missing in the model definition: gpt.gpt.h.29.ln_1.bias
+ | > Layer missing in the model definition: gpt.gpt.h.29.attn.c_attn.weight
+ | > Layer missing in the model definition: gpt.gpt.h.29.attn.c_attn.bias
+ | > Layer missing in the model definition: gpt.gpt.h.29.attn.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.29.attn.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.h.29.ln_2.weight
+ | > Layer missing in the model definition: gpt.gpt.h.29.ln_2.bias
+ | > Layer missing in the model definition: gpt.gpt.h.29.mlp.c_fc.weight
+ | > Layer missing in the model definition: gpt.gpt.h.29.mlp.c_fc.bias
+ | > Layer missing in the model definition: gpt.gpt.h.29.mlp.c_proj.weight
+ | > Layer missing in the model definition: gpt.gpt.h.29.mlp.c_proj.bias
+ | > Layer missing in the model definition: gpt.gpt.ln_f.weight
+ | > Layer missing in the model definition: gpt.gpt.ln_f.bias
+ | > Layer missing in the model definition: gpt.mel_pos_embedding.emb.weight
+ | > Layer missing in the model definition: gpt.text_pos_embedding.emb.weight
+ | > Layer missing in the model definition: gpt.final_norm.weight
+ | > Layer missing in the model definition: gpt.final_norm.bias
+ | > Layer missing in the model definition: gpt.text_head.weight
+ | > Layer missing in the model definition: gpt.text_head.bias
+ | > Layer missing in the model definition: gpt.mel_head.weight
+ | > Layer missing in the model definition: gpt.mel_head.bias
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.latents
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.layers.0.0.to_q.weight
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.layers.0.0.to_kv.weight
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.layers.0.0.to_out.weight
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.layers.0.1.0.weight
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.layers.0.1.0.bias
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.layers.0.1.2.weight
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.layers.0.1.2.bias
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.layers.1.0.to_q.weight
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.layers.1.0.to_kv.weight
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.layers.1.0.to_out.weight
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.layers.1.1.0.weight
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.layers.1.1.0.bias
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.layers.1.1.2.weight
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.layers.1.1.2.bias
+ | > Layer missing in the model definition: gpt.conditioning_perceiver.norm.gamma
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.conv_pre.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.conv_pre.weight
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.ups.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.ups.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.ups.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.ups.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.ups.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.ups.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.ups.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.ups.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.ups.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.ups.3.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.ups.3.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.ups.3.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs1.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs1.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs1.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs2.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs2.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs2.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.0.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs1.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs1.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs1.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs2.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs2.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs2.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.1.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs1.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs1.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs1.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs2.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs2.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs2.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.2.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs1.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs1.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs1.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs2.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs2.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs2.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.3.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs1.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs1.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs1.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs2.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs2.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs2.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.4.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs1.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs1.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs1.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs2.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs2.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs2.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.5.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs1.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs1.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs1.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs2.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs2.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs2.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.6.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs1.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs1.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs1.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs2.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs2.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs2.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.7.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs1.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs1.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs1.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs2.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs2.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs2.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.8.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs1.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs1.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs1.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs2.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs2.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs2.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.9.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs1.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs1.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs1.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs2.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs2.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs2.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.10.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs1.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs1.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs1.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs2.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs2.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs2.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.resblocks.11.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.conv_post.weight
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.cond_layer.weight
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.cond_layer.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.conds.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.conds.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.conds.1.weight
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.conds.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.conds.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.conds.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.conds.3.weight
+ | > Layer missing in the model definition: hifigan_decoder.waveform_decoder.conds.3.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.conv1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.0.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.1.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer1.2.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.downsample.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.downsample.1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.downsample.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.downsample.1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.downsample.1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.0.downsample.1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.1.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.2.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer2.3.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.downsample.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.downsample.1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.downsample.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.downsample.1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.downsample.1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.0.downsample.1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.1.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.2.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.3.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.4.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer3.5.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.downsample.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.downsample.1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.downsample.1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.downsample.1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.downsample.1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.0.downsample.1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.1.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.conv1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.bn1.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.bn1.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.bn1.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.bn1.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.bn1.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.conv2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.bn2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.bn2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.bn2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.bn2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.bn2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.se.fc.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.se.fc.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.se.fc.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.layer4.2.se.fc.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.torch_spec.0.filter
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.torch_spec.1.spectrogram.window
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.torch_spec.1.mel_scale.fb
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.attention.0.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.attention.0.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.attention.2.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.attention.2.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.attention.2.running_mean
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.attention.2.running_var
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.attention.2.num_batches_tracked
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.attention.3.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.attention.3.bias
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.fc.weight
+ | > Layer missing in the model definition: hifigan_decoder.speaker_encoder.fc.bias
+ | > Layer missing in the checkpoint: xtts.mel_stats
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.init.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.init.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.0.norm.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.0.norm.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.0.qkv.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.0.qkv.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.0.proj_out.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.0.proj_out.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.1.norm.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.1.norm.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.1.qkv.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.1.qkv.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.1.proj_out.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.1.proj_out.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.2.norm.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.2.norm.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.2.qkv.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.2.qkv.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.2.proj_out.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.2.proj_out.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.3.norm.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.3.norm.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.3.qkv.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.3.qkv.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.3.proj_out.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.3.proj_out.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.4.norm.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.4.norm.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.4.qkv.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.4.qkv.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.4.proj_out.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.4.proj_out.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.5.norm.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.5.norm.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.5.qkv.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.5.qkv.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.5.proj_out.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_encoder.attn.5.proj_out.bias
+ | > Layer missing in the checkpoint: xtts.gpt.text_embedding.weight
+ | > Layer missing in the checkpoint: xtts.gpt.mel_embedding.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.0.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.0.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.0.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.0.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.0.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.0.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.0.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.0.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.0.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.0.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.0.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.0.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.1.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.1.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.1.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.1.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.1.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.1.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.1.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.1.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.1.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.1.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.1.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.1.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.2.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.2.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.2.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.2.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.2.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.2.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.2.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.2.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.2.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.2.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.2.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.2.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.3.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.3.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.3.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.3.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.3.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.3.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.3.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.3.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.3.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.3.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.3.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.3.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.4.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.4.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.4.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.4.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.4.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.4.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.4.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.4.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.4.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.4.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.4.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.4.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.5.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.5.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.5.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.5.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.5.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.5.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.5.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.5.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.5.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.5.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.5.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.5.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.6.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.6.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.6.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.6.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.6.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.6.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.6.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.6.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.6.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.6.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.6.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.6.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.7.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.7.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.7.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.7.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.7.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.7.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.7.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.7.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.7.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.7.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.7.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.7.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.8.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.8.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.8.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.8.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.8.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.8.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.8.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.8.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.8.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.8.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.8.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.8.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.9.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.9.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.9.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.9.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.9.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.9.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.9.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.9.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.9.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.9.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.9.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.9.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.10.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.10.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.10.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.10.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.10.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.10.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.10.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.10.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.10.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.10.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.10.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.10.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.11.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.11.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.11.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.11.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.11.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.11.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.11.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.11.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.11.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.11.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.11.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.11.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.12.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.12.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.12.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.12.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.12.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.12.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.12.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.12.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.12.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.12.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.12.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.12.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.13.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.13.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.13.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.13.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.13.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.13.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.13.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.13.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.13.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.13.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.13.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.13.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.14.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.14.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.14.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.14.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.14.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.14.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.14.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.14.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.14.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.14.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.14.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.14.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.15.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.15.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.15.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.15.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.15.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.15.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.15.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.15.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.15.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.15.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.15.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.15.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.16.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.16.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.16.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.16.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.16.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.16.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.16.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.16.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.16.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.16.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.16.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.16.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.17.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.17.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.17.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.17.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.17.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.17.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.17.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.17.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.17.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.17.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.17.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.17.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.18.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.18.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.18.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.18.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.18.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.18.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.18.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.18.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.18.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.18.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.18.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.18.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.19.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.19.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.19.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.19.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.19.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.19.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.19.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.19.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.19.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.19.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.19.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.19.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.20.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.20.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.20.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.20.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.20.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.20.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.20.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.20.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.20.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.20.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.20.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.20.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.21.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.21.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.21.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.21.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.21.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.21.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.21.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.21.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.21.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.21.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.21.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.21.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.22.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.22.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.22.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.22.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.22.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.22.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.22.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.22.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.22.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.22.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.22.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.22.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.23.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.23.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.23.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.23.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.23.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.23.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.23.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.23.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.23.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.23.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.23.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.23.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.24.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.24.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.24.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.24.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.24.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.24.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.24.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.24.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.24.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.24.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.24.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.24.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.25.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.25.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.25.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.25.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.25.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.25.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.25.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.25.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.25.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.25.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.25.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.25.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.26.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.26.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.26.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.26.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.26.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.26.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.26.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.26.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.26.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.26.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.26.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.26.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.27.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.27.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.27.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.27.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.27.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.27.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.27.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.27.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.27.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.27.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.27.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.27.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.28.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.28.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.28.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.28.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.28.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.28.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.28.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.28.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.28.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.28.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.28.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.28.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.29.ln_1.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.29.ln_1.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.29.attn.c_attn.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.29.attn.c_attn.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.29.attn.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.29.attn.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.29.ln_2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.29.ln_2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.29.mlp.c_fc.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.29.mlp.c_fc.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.29.mlp.c_proj.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.h.29.mlp.c_proj.bias
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.ln_f.weight
+ | > Layer missing in the checkpoint: xtts.gpt.gpt.ln_f.bias
+ | > Layer missing in the checkpoint: xtts.gpt.mel_pos_embedding.emb.weight
+ | > Layer missing in the checkpoint: xtts.gpt.text_pos_embedding.emb.weight
+ | > Layer missing in the checkpoint: xtts.gpt.final_norm.weight
+ | > Layer missing in the checkpoint: xtts.gpt.final_norm.bias
+ | > Layer missing in the checkpoint: xtts.gpt.text_head.weight
+ | > Layer missing in the checkpoint: xtts.gpt.text_head.bias
+ | > Layer missing in the checkpoint: xtts.gpt.mel_head.weight
+ | > Layer missing in the checkpoint: xtts.gpt.mel_head.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.latents
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.layers.0.0.to_q.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.layers.0.0.to_kv.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.layers.0.0.to_out.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.layers.0.1.0.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.layers.0.1.0.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.layers.0.1.2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.layers.0.1.2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.layers.1.0.to_q.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.layers.1.0.to_kv.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.layers.1.0.to_out.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.layers.1.1.0.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.layers.1.1.0.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.layers.1.1.2.weight
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.layers.1.1.2.bias
+ | > Layer missing in the checkpoint: xtts.gpt.conditioning_perceiver.norm.gamma
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.conv_pre.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.conv_pre.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.ups.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.ups.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.ups.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.ups.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.ups.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.ups.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.ups.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.ups.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.ups.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.ups.3.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.ups.3.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.ups.3.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs1.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs1.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs1.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs2.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs2.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs2.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.0.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs1.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs1.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs1.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs2.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs2.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs2.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.1.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs1.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs1.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs1.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs2.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs2.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs2.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.2.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs1.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs1.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs1.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs2.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs2.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs2.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.3.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs1.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs1.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs1.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs2.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs2.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs2.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.4.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs1.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs1.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs1.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs2.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs2.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs2.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.5.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs1.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs1.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs1.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs2.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs2.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs2.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.6.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs1.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs1.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs1.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs2.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs2.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs2.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.7.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs1.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs1.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs1.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs2.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs2.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs2.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.8.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs1.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs1.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs1.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs2.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs2.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs2.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.9.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs1.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs1.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs1.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs2.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs2.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs2.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.10.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs1.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs1.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs1.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs1.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs1.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs1.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs1.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs1.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs1.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs2.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs2.0.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs2.0.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs2.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs2.1.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs2.1.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs2.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs2.2.parametrizations.weight.original0
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.resblocks.11.convs2.2.parametrizations.weight.original1
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.conv_post.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.cond_layer.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.cond_layer.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.conds.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.conds.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.conds.1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.conds.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.conds.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.conds.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.conds.3.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.waveform_decoder.conds.3.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.conv1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.0.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.1.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer1.2.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.downsample.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.downsample.1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.downsample.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.downsample.1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.downsample.1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.0.downsample.1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.1.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.2.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer2.3.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.downsample.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.downsample.1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.downsample.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.downsample.1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.downsample.1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.0.downsample.1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.1.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.2.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.3.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.4.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer3.5.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.downsample.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.downsample.1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.downsample.1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.downsample.1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.downsample.1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.0.downsample.1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.1.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.conv1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.bn1.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.bn1.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.bn1.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.bn1.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.bn1.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.conv2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.bn2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.bn2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.bn2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.bn2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.bn2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.se.fc.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.se.fc.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.se.fc.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.layer4.2.se.fc.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.torch_spec.0.filter
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.torch_spec.1.spectrogram.window
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.torch_spec.1.mel_scale.fb
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.attention.0.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.attention.0.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.attention.2.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.attention.2.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.attention.2.running_mean
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.attention.2.running_var
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.attention.2.num_batches_tracked
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.attention.3.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.attention.3.bias
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.fc.weight
+ | > Layer missing in the checkpoint: xtts.hifigan_decoder.speaker_encoder.fc.bias
+ | > Layer missing in the checkpoint: torch_mel_spectrogram_style_encoder.mel_stft.spectrogram.window
+ | > Layer missing in the checkpoint: torch_mel_spectrogram_style_encoder.mel_stft.mel_scale.fb
+ | > Layer missing in the checkpoint: dvae.discrete_loss.accumulator_index
+ | > Layer missing in the checkpoint: dvae.discrete_loss.accumulator_filled
+ | > Layer missing in the checkpoint: dvae.discrete_loss.accumulator
+ | > Layer missing in the checkpoint: dvae.encoder.0.0.weight
+ | > Layer missing in the checkpoint: dvae.encoder.0.0.bias
+ | > Layer missing in the checkpoint: dvae.encoder.1.0.weight
+ | > Layer missing in the checkpoint: dvae.encoder.1.0.bias
+ | > Layer missing in the checkpoint: dvae.encoder.2.net.0.weight
+ | > Layer missing in the checkpoint: dvae.encoder.2.net.0.bias
+ | > Layer missing in the checkpoint: dvae.encoder.2.net.2.weight
+ | > Layer missing in the checkpoint: dvae.encoder.2.net.2.bias
+ | > Layer missing in the checkpoint: dvae.encoder.2.net.4.weight
+ | > Layer missing in the checkpoint: dvae.encoder.2.net.4.bias
+ | > Layer missing in the checkpoint: dvae.encoder.3.net.0.weight
+ | > Layer missing in the checkpoint: dvae.encoder.3.net.0.bias
+ | > Layer missing in the checkpoint: dvae.encoder.3.net.2.weight
+ | > Layer missing in the checkpoint: dvae.encoder.3.net.2.bias
+ | > Layer missing in the checkpoint: dvae.encoder.3.net.4.weight
+ | > Layer missing in the checkpoint: dvae.encoder.3.net.4.bias
+ | > Layer missing in the checkpoint: dvae.encoder.4.net.0.weight
+ | > Layer missing in the checkpoint: dvae.encoder.4.net.0.bias
+ | > Layer missing in the checkpoint: dvae.encoder.4.net.2.weight
+ | > Layer missing in the checkpoint: dvae.encoder.4.net.2.bias
+ | > Layer missing in the checkpoint: dvae.encoder.4.net.4.weight
+ | > Layer missing in the checkpoint: dvae.encoder.4.net.4.bias
+ | > Layer missing in the checkpoint: dvae.encoder.5.weight
+ | > Layer missing in the checkpoint: dvae.encoder.5.bias
+ | > Layer missing in the checkpoint: dvae.decoder.0.weight
+ | > Layer missing in the checkpoint: dvae.decoder.0.bias
+ | > Layer missing in the checkpoint: dvae.decoder.1.net.0.weight
+ | > Layer missing in the checkpoint: dvae.decoder.1.net.0.bias
+ | > Layer missing in the checkpoint: dvae.decoder.1.net.2.weight
+ | > Layer missing in the checkpoint: dvae.decoder.1.net.2.bias
+ | > Layer missing in the checkpoint: dvae.decoder.1.net.4.weight
+ | > Layer missing in the checkpoint: dvae.decoder.1.net.4.bias
+ | > Layer missing in the checkpoint: dvae.decoder.2.net.0.weight
+ | > Layer missing in the checkpoint: dvae.decoder.2.net.0.bias
+ | > Layer missing in the checkpoint: dvae.decoder.2.net.2.weight
+ | > Layer missing in the checkpoint: dvae.decoder.2.net.2.bias
+ | > Layer missing in the checkpoint: dvae.decoder.2.net.4.weight
+ | > Layer missing in the checkpoint: dvae.decoder.2.net.4.bias
+ | > Layer missing in the checkpoint: dvae.decoder.3.net.0.weight
+ | > Layer missing in the checkpoint: dvae.decoder.3.net.0.bias
+ | > Layer missing in the checkpoint: dvae.decoder.3.net.2.weight
+ | > Layer missing in the checkpoint: dvae.decoder.3.net.2.bias
+ | > Layer missing in the checkpoint: dvae.decoder.3.net.4.weight
+ | > Layer missing in the checkpoint: dvae.decoder.3.net.4.bias
+ | > Layer missing in the checkpoint: dvae.decoder.4.0.conv.weight
+ | > Layer missing in the checkpoint: dvae.decoder.4.0.conv.bias
+ | > Layer missing in the checkpoint: dvae.decoder.5.0.conv.weight
+ | > Layer missing in the checkpoint: dvae.decoder.5.0.conv.bias
+ | > Layer missing in the checkpoint: dvae.decoder.6.weight
+ | > Layer missing in the checkpoint: dvae.decoder.6.bias
+ | > Layer missing in the checkpoint: dvae.codebook.embed
+ | > Layer missing in the checkpoint: dvae.codebook.cluster_size
+ | > Layer missing in the checkpoint: dvae.codebook.embed_avg
+ | > Layer missing in the checkpoint: torch_mel_spectrogram_dvae.mel_stft.spectrogram.window
+ | > Layer missing in the checkpoint: torch_mel_spectrogram_dvae.mel_stft.mel_scale.fb
+ | > 0 / 1023 layers are restored.
+ > Model restored from step 10000000

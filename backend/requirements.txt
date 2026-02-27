@@ -1,0 +1,36 @@
+# Core Framework
+fastapi
+uvicorn[standard]
+python-multipart
+websockets
+
+# Machine Learning & Audio Processing
+torch
+torchaudio
+TTS
+openai-whisper
+transformers
+accelerate
+stable-ts
+
+# Audio Processing
+librosa
+soundfile
+pydub
+audioread
+scipy
+
+# API & Data Handling
+pydantic>=2.0
+pydantic-settings
+python-jose[cryptography]
+aiofiles
+
+# Utilities
+numpy
+pandas
+psutil
+python-dotenv
+
+# CUDA Support (these will use CUDA if available)
+# Install with: pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
